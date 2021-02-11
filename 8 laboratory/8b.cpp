@@ -14,7 +14,6 @@ int main(){
             cin >> element;
         }
     }
-
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             if ((adjacency_matrix[j][j] == 1) or (adjacency_matrix[i][j] != adjacency_matrix[j][i])){
