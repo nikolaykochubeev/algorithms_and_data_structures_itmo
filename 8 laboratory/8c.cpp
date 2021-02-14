@@ -18,7 +18,7 @@ int main(){
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            if ((adjacency_matrix[i][j]) and (adjacency_matrix[i][j] == adjacency_matrix[j][i])){
+            if ((adjacency_matrix[i][j]) and (adjacency_matrix[j][i] and (i=!j))){
                 cout << "YES";
                 return 0;
             }
