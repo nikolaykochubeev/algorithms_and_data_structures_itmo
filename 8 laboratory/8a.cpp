@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     ifstream cin("input.txt");
-    ofstream cout("output.txt");
+    ofstream cout(" qoutput.txt");
     int n, m;
     cin >> n >> m;
     int adjacency_matrix[n][n];
