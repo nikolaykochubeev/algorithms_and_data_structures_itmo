@@ -130,7 +130,7 @@ void mark_components(long long from, const edges_lists& graph, vector<long long>
 
 int main(){
     ifstream cin("chinese.in");
-    ofstream сout("chinese.out");
+    ofstream cout("chinese.out");
     long long n, m;
     cin >> n;
     cin >> m;
@@ -143,10 +143,10 @@ int main(){
     }
 
     if (check_availability(0, graph)){
-        сout << "YES\n";
-        сout << get_mst(0, graph) << "\n";
+        cout << "YES\n";
+        cout << get_mst(0, graph) << "\n";
     }
     else
-        сout << "NO\n";
+        cout << "NO\n";
     return 0;
 }
