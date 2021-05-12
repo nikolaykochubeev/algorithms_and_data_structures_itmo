@@ -3,8 +3,8 @@
 using namespace std;
 
 vector<int> NaiveStringMatcher(string t, string p){
-    int n = t.size();
-    int m = p.size();
+    int n = (int)t.size();
+    int m = (int)p.size();
     vector<int> ans;
     for (int i = 0; i < n; i++){
         if (t[i] == p[0]){
@@ -32,8 +32,8 @@ int main(){
     fin >> p >> t;
     vector<int> answer;
     answer = NaiveStringMatcher(t, p);
-    fout << answer.size() << ' ';
+    fout << answer.size() << endl;
     for (int i: answer)
-        fout << i++ << ' ';
+        fout << ++i << " ";
     return 0;
 }
